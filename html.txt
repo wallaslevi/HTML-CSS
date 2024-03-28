@@ -1,0 +1,257 @@
+Estrutura basica: estrutura obrigatória de uma
+página web.
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+    </head>
+
+    <body>
+        
+    </body>
+
+</html>
+--------------------------------------------------------------------
+Estrutura de conteudo: têm o papel de marcar o conteúdo pelo seu tipo.
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Titulo da pagina</title>
+    </head>
+
+    <body>
+
+        <h1>Minha pagina</h1>
+        <p><b>Conteudo da pagina</b></p>
+        <img src="imagens/imagem1.jpg" alt="imagem 1 da minha pagina">
+        <hr/>
+
+        <h2>Outros conteudos</h2>
+        <p><i>Conteudo da pagina</i></p>
+        <hr/>
+
+        <ol><!==lista ordenada==>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+        </ol>
+
+        <form nethod="post">
+            <input type="submit" name="enviar" value="Enviar">
+        </form>
+
+     </body>
+
+</html>
+-----------------------------------------------------------------------
+Estrutura de semanticas: elas separam o conteúdo
+em partes lógicas que formam o esqueleto da maioria das páginas
+HTML
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Titulo da pagina</title>
+    </head>
+
+    <body>
+        
+        <header>
+            Cabeçalho da pagina
+        </header>
+
+        <nav>
+            Barra do navegador
+        </nav>
+
+        <main>
+            Conteudo da pagina
+
+            <aside>
+                Barra lateral
+            </aside>
+
+        </main>
+        
+        <footer>
+            Rodapé
+        </footer>
+
+     </body>
+
+</html>
+---------------------------------------------------------------------
+exemplos de tags:
+<!DOCTYPE html> - instrução para o navegador da web que diz em qual versão do HTML a página é escrita
+
+<html> e </html> - tudo que esta na pagina deve ficar entre essa tags
+
+<head> - é a parte que não é exibida no navegador da Web quando a página é carregada
+
+<title> -  define o título do documento, mostrado na barra de título de um navegador ou na aba da página
+
+<body> e </body> - onde fica todo o corpo do site
+
+<h1>–<h6> representam seis níveis de título de seção. <h1> é o nível de seção mais alto e <h6> é o mais baixo.
+
+<p> - representa um parágrafo.são usados para agrupar conteúdos relacionados de qualquer tipo, como imagens e campos de um formulário
+
+<small> deixa o texto menor
+
+<del> texto com risco no meio das letras
+
+<ins> texto com linha na parte de baixo
+
+<sup> elevar um caracter na parte de cima de outras letras.X²
+<sub> colocar um caracter na parte de baixo do restante do texto-H₂O
+
+<q>frase dentro de aspas, nao tera deslocamento do da frase
+
+<blockquote> bloco de texto dentro de uma citação com deslocamento para o lado.
+tambem é possivel colocar um link na citação com o parametro "cite" EX:
+<clockquote cite="link"> resto da citação...</clockquote>
+
+<abbr> representa uma abreviação e opcionalmente fornece uma descrição completa para ela. Se presente, o atributo title deve conter a descrição completa e apenas ela. Ex: <p>Obama é presidente dos <abbr title="Estados Unidos da América">EUA</abbr></p> resultado: Obama é presidente dos EUA
+
+<bdo> inverte os textos. como o parametro dir pode indicar as 2 direções possiveis.
+rtl=da direita pra esquerda. ltr=da esquerda pra direita. Ex: <bdo dir="rtl">teste de texto invertido</bdo>
+
+<b> - representa um intervalo de texto em negrito
+
+<em> para indicar ênfase ou estresse aparecera em italico, tem semantica.
+
+<strong> para indicar importância aparecerá em negrito.
+
+<mark> para indicar relevância, vai marcar uma frase como se fosse um marca texto.
+
+<cite> para citar o nome de um trabalho, tal como um livro, jogo ou música.
+
+<dfn> para marcar a instância de definição de um termo .
+
+<hr/> representa uma quebra temática entre elementos de nível de parágrafo
+
+<i> parte do texto em italico, sem semantica
+---------------------------------------------------------------------------
+<ol> representa uma lista de itens ordenados. Ex:
+    <li>levantar
+    <li>escovar os dentes
+    <li>tomar cafe
+    <li>ir trabalhar
+    podendo ainda receber alguns atributos como "reversed" especifica que as partes desta lista serão especificadas em ordem reversa, isto é, a menos importante será listada primeiro. o "start" que voce escolhe a partir de qual valor vai começar a lista. "type" é o tipo de enumeração que sera listado: 
+    'a' indica letras minúsculas,
+    'A' indica letras maiúsculas,
+    'i' indica algarismos romanos minúsculos,
+    'I' indica algarismos romanos maiúsculos,
+    e '1' indica números (padrão).
+
+<ul> - sao listas NÃO ordenadas. possui atributos pra se utilizar como círculo (circle), disco(disc) e quadrado(square). no "type". Ex: Type=disc. Os tipos atualmente só sao definidos por parte de utilização de CSS
+
+<dl> Usadas quando precisamos listar itens e atribuirmos uma descrição a eles. <dt>- é a tag item, e <dd>- é a tag de definição
+---------------------------------------------------------------------------
+<header> -usada para agrupar elementos de cabeçalho em uma seção ou página, como logotipos, menus de navegação, títulos, entre outros. Ele não define um nível de cabeçalho específico, mas sim uma seção de cabeçalho.
+
+<nav> -  usada para definir uma seção de navegação em uma página web.Geralmente, ela é usada para agrupar links de navegação
+
+<main> -define o conteúdo principal. Autores não devem incluir mais de um elemento main no mesmo documento
+
+<article> Inclui um bloco de conteúdo que deve ser usado quando se deseja inserir um artigo, como um post de um blog, por exemplo.
+
+<section> Define uma seção no documento. É normalmente utilizado para agrupar seções. Por exemplo: uma <section> poderia conter vários <article>.
+----------------------------------------------------------------------------
+<meta> define qualquer informação de metadados que não podem ser definidos por outros elementos HTML. (<base>, <link>, <script>, <style> ou <title>) é usada para fornecer metadados sobre o documento HTML. Metadados são informações sobre os dados no documento. A tag <meta> não possui conteúdo visível na página, mas fornece informações sobre o documento, como conjunto de caracteres, descrição, palavras-chave, autor, e outros metadados.
+<meta charset="UTF-8"> - essa linha por exemplo vai garantir que o site tenha compatibilidade com caracteres especiais como "ç"
+<meta name="viewport"content="width=device-width,initial-scale=1.0"> - essa linha garante que o site utilize toda a escale da pagina disponivel 1:1
+
+<br> - é um quebra linha
+
+*caso deseje colocar um simbolo na pagina, é só perquisar por html entities
+
+*caso desejese colocar emojis só acessar o site emojipedia.org , pegar o codepoints e substituir o primeiro caracter e o "+" e colocar "&#x" juntamente dos outros caracters
+
+*png - esse tipo de imagem permite transparencia e animação e mais qualidade. jpg tem alta compactação  
+
+<pre> Usada para inserir um texto pré-formatado.<code> é a tag pra um codigo fonte
+
+<div> Embora não seja considerada semântica, essa tag poderá ser usada para agrupar algum tipo de conteúdo que não tenha nenhuma semântica específica ou que não se encaixe bem dentro de uma tag semântica
+
+<span> É semelhante à <div>. Entretanto, enquanto a <div> é um elemento não semântico no bloco (quando usada, quebra o conteúdo em uma seção), a <span> é embutida (não quebra o conteúdo, apenas o agrupa).
+
+----------------------------------------------------------------------
+<table>	Container principal da tabela
+
+<tr>	Representa as linhas, sendo composta pelas tags relacionadas às colunas.
+
+<td>	Representa as colunas e precisa ser inserida dentro da tag de linha.
+
+<th>	Também representa colunas e é usada para exibir o título de uma coluna, possuindo, neste sentido, função semântica. Assim como a tag <td>, deve estar contida em uma tag de linha. Este elemento apresenta estilos próprios, sendo renderizado de forma diferente das colunas comuns.
+
+<thead>	Armazena o cabeçalho da tabela, sendo composto por linhas e colunas. Este elemento, a exemplo do que vimos anteriormente, tem função semântica em termos de estruturação de conteúdo.
+
+<tfoot>	Armazena o rodapé da tabela, tendo também função semântica em termos de estruturação.
+
+tbody- corpo da tabela
+-----------------------------------------------------------------------------
+<video> - <video src="small.mp4" controls> < /video> - introduzir videos. onde "src" indica o local do video. Os atributos “controls”, “autoplay” e “loop”, que são específicos para este tipo de mídia em questão, fornecem suporte ao controle do conteúdo (vídeo ou áudio) incorporado pelo navegador, além de definirem alguns comportamentos, como o autoplay e o loop, que são autoexplicativos
+
+<audio> - <audio src="sample.ogg" controls autoplay loop> < /audio>
+-----------------------------------------------------------------------------
+<form> Container principal do formulário. com o atributo "action" Define a URL (endereço) para a qual os dados do formulário serão enviados. com o atributo "method" Define o método HTTP (POST ou GET) para envio dos dados.
+
+<input> Campo do formulário. Como há diversos tipos de campos, fazemos uso do atributo “type” para informar o tipo a ser utilizado – conforme veremos mais adiante. "minlength" e "maxlength" sao atributos que Definem a quantidade de caracteres mínima e máxima, respectivamente, permitida em um campo. "type" Define o tipo do campo e, sobretudo, como ele se comporta.
+
+<textarea> Campo de texto de múltiplas linhas.
+
+<select> e <option> campos de seleção, onde o container é definido pela tag <select> e os itens pela tag <option>.
+
+button - Campo de botão. Permite que uma ação seja executada no formulário – enviar o formulário, limpar os dados etc. "type" Define o tipo do campo e, sobretudo, como ele se comporta
+
+label - Usado para definir um título, uma legenda, que descreva para que serve cada campo do formulário. com o atributo "for" Vincula a tag <label> ao campo ao qual ela se refere. Este vínculo faz com que seja possível clicar na label para ativar o campo relacionado.
+
+<fieldset> cria seções dentro do formulário, ajudando a separar os campos no código e a visualizar a página no navegador. Isso fica ainda mais claro quando vinculamos ao <fieldset> a tag <legend>
+
+<option> com o atributo "value" Este atributo também pode ser utilizado na tag <input>. Ele define o valor do campo. No caso da <option>, os seus valores possíveis são previamente definidos quando a página é codificada. Já na <input>, embora também possa ser previamente definido, normalmente é o usuário quem define o seu valor.
+
+o atributo "type" pode ser do tipo texto="text", password=mascara o texto, hidden=Esconde o campo para não ser exibido no navegador, checkbox=Usado para seleção de valor através de click/check. radio= Usado para seleção exclusiva de valor – quando é apresentada mais de uma opção, apenas uma poderá ser selecionada, ao contrário do tipo “checkbox”. submit=Associada à tag <button>, dispara o evento que envia/submete o formulário. reset=Associada à tag <button>, dispara o evento que limpa os valores do formulário. button=Uma tag <input> pode ser do tipo “button” – exercendo, assim, a mesma função da tag <button>.
+
+outros atributos: placeholder- Exibir um texto no campo de input.
+Utilizado para dar uma dica ao usuário sobre o dado a ser inserido.
+required- Determinar se um campo é obrigatório. Utilizado na validação dos dados de um formulário. autofocus - Fixar o foco no campo.
+Utilizado quando desejamos que, ao carregar o formulário, um determinado campo seja focado. pattern - Validar o valor de um campo com base em uma expressão regular. (As RegEX – expressões regulares – podem ser consideradas um recurso de linguagem de programação para a análise e manipulação de texto.) O campo de tel. é um bom exemplo de utilização desse atributo. Com ele podemos, por exemplo, determinar a quantidade de caracteres e o formato esperado para um campo.
+
+tipos de atributos- tel - Inserir números de telefone. Para uma melhor usabilidade, deve ser usado em conjunto com o atributo pattern.
+datetime- Inserir datas com o fuso horário em UTC a partir de um calendário.
+date- Inserir datas sem fuso horário a partir de um calendário.
+number-Inserir números. Cria um componente diferente do imput normal, em que, por meio de setas, os números podem ser incrementados ou decrementados.
+
+Atenção!
+O comportamento padrão da HTML5 é validar os dados quando ocorre o envio do formulário. Entretanto, é possível desativar essa funcionalidade. Para isso, deve ser atribuído o atributo “novalidate” à tag <form>.
+-----------------------------------------------------------------------------
+forma de por link externo: <a> Usada para inserir links para sites externos. Quando desejar que o link aberto abra em outra guia é preciso por o parametro target="_blank" rel="external" (rel="external" indica que sera aberto um link de um site externo) caso contrario o a nova guia vai encerrar a anterior
+
+forma de por link interno: é utilizado também a ancora <a> e se a segunda pagina estiver na mesma pasta é só informar o nome dado a pagina que sera direcionado. o parametro target="_blank" tambem serve pra preservar a pagina inicial para que ela n seja fechada. e o parametro rel="next" deve ser utilizado pra indicar que esta indo para a proxima pagina. quando se deseja retornar a pagina anterior se coloca rel="prev" 
+----------------------------------------------------------------------------
+formas de disponibilizar material para download. é só utilizar <a>, indicar o caminho do arquivo que deseja disponibilizar, colocar o parametro download="|nome do arquivo|.|tipo do arquivo|" e o parametro type="verifica no site o tipo de material que vai disponibilizar". o site https://www.iana.org/assignments/media-types/media-types.xhtml la tem o parametro a ser utilizado por todo tipo de arquivo
+---------------------------------------------------------------------------
+<img src="foto.png"alt="exemplo de foto"> - onde: "src" e "alt" são parametros "foto.png" e "exemplo de foto" são valores. src=source=fonte/origem. exemplo de foto é o que vai ser mostrado caso o usuario nao consiga ver src.
+
+<picture> - permite que crie varias fontes de imagens
+
+<source> - permite indicar ao navegador abrir a imagem no tamanho adequado.
+Ex: 
+
+<picture>
+    <source media="(max-width: 750px )" srcset="caminho do arquivo + nome da imagem"      type="image/png">
+        <source media="(max-width: 1050px)" srcset="caminho do arquivo + nome da imagem" type="image/png">
+        <img src="caminho do arquivo + nome da imagem" alt="imagem flaxivel">
+</picture>
+obs* sempre na ordem, imagem-imagem media-imagem pequena...
+----------------------------------------------------------------------
+
